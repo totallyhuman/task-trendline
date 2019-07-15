@@ -1,0 +1,20 @@
+<mat-card class="task-trendline">
+  <mat-card-header class="task-trendline-header">
+    <mat-card-title class="task-trendline-title">Task Trendline</mat-card-title>
+    <mat-list class="task-trendline-legend">
+      <mat-list-item style="float:right;width:auto;height:auto">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 12 7" width="12" height="7">
+          <path d=" M 2.536 3 L 0 3 L 0 4 L 2.536 4 C 2.778 5.695 4.238 7 6 7 C 7.762 7 9.222 5.695 9.464 4 L 12 4 L 12 3 L 9.464 3 C 9.222 1.305 7.762 0 6 0 C 4.238 0 2.778 1.305 2.536 3 Z " fill="rgb(104, 159, 56)" /></svg>
+        <p class="task-trendline-legend-label">Completed</p>
+      </mat-list-item>
+      <mat-list-item style="float:right;width:auto;height:auto">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="isolation:isolate" viewBox="0 0 12 7" width="12" height="7">
+          <path d=" M 2.536 3 L 0 3 L 0 4 L 2.536 4 C 2.778 5.695 4.238 7 6 7 C 7.762 7 9.222 5.695 9.464 4 L 12 4 L 12 3 L 9.464 3 C 9.222 1.305 7.762 0 6 0 C 4.238 0 2.778 1.305 2.536 3 Z " fill="rgb(0,195,230)" /></svg>
+        <p class="task-trendline-legend-label">Requests</p>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-header>
+  <mat-card-content>
+    <google-chart class="task-trendline-chart" #chart [title]="title" [type]="type" [data]="data" [columnNames]="columnNames" [options]="options" [width]="width" [height]="height"></google-chart>
+  </mat-card-content>
+</mat-card>

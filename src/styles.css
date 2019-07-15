@@ -1,0 +1,12 @@
+.task-trendline-header > .mat-card-header-text {
+    width: 50% !important;
+    margin: 0 !important;
+}
+
+.task-trendline-legend > .mat-list-item > .mat-list-item-content {
+    padding-right: 0 !important;
+}
+
+.task-trendline-chart > div > div > .google-visualization-tooltip {
+    border: none;
+}
